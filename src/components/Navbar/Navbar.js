@@ -4,12 +4,12 @@ import piePic from '../../assets/pie.png'
 import Logout from '../Logout/Logout';
 
 const Navbar = (props) => {
-
+    console.log(props)
     return(
         <div>
             <nav>
                 <img id="piePic" alt="pie" src={piePic} />
-                <Logout />
+                <Logout clearLocalStorage={props.clearLocalStorage} />
             </nav>
         </div>
     )
